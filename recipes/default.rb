@@ -12,6 +12,7 @@ include_recipe "ntp"
 include_recipe "td-agent"
 include_recipe "java"
 include_recipe "elasticsearch"
+include_recipe "nginx"
 include_recipe "kibana"
 include_recipe "kibana::install"
 
