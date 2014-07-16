@@ -39,3 +39,5 @@ suites:
   - name: default
     run_list:
      - recipe[osl-logging]
+     - recipe[java]
+     - recipe[elasticsearch]
