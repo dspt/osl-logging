@@ -41,4 +41,5 @@ suites:
      - recipe[osl-logging]
      - recipe[java]
      - recipe[elasticsearch]
+     - recipe[kibana]
      - recipe[kibana::install]
