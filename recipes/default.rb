@@ -7,6 +7,13 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "yum"
+include_recipe "ntp"
+include_recipe "td-agent"
+include_recipe "java"
+include_recipe "elasticsearch"
+
+
 package "git"
 
 log "hello"

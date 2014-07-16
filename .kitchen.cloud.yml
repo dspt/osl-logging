@@ -7,13 +7,14 @@ driver_config:
   private_key_path: <%= ENV['OS_PRIVATE_SSH_KEY'] %>
   public_key_path: <%= ENV['OS_PUBLIC_SSH_KEY'] %>
   openstack_tenant: OSL
-  floating_ip: <%= ENV['OS_FLOATING_IP'] %>
+  #floating_ip: <%= ENV['OS_FLOATING_IP'] %>
+  floating_ip_pool: 'nova'
   flavor_ref: <%= ENV['OS_FLAVOR_REF'] %>
 
 provisioner:
   name: chef_solo
-  data_bags_path: "test/integration/data_bags"
-  encrypted_data_bag_secret_key_path: "encrypted_data_bag_secret"
+#  data_bags_path: "test/integration/data_bags"
+#  encrypted_data_bag_secret_key_path: "encrypted_data_bag_secret"
   attributes:
     mysql:
       server_root_password: rootpass
