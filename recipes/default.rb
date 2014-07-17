@@ -16,6 +16,9 @@ include_recipe "nginx"
 include_recipe "kibana"
 include_recipe "kibana::install"
 
-package "git"
-
-log "hello"
+template '/etc/td-agent/td-agent.conf' do
+  source "td-agent.conf.erb"
+  owner 'root'
+  group 'root'
+  mode  '0644'
+end
