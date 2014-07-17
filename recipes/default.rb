@@ -7,7 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'gcc'
 package 'curl'
 package 'libcurl-devel'
 
