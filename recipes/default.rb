@@ -17,6 +17,7 @@ include_recipe "kibana"
 include_recipe "kibana::install"
 
 package 'curl'
+package 'libcurl-devel'
 
 template '/etc/td-agent/td-agent.conf' do
   source "td-agent.conf.erb"
