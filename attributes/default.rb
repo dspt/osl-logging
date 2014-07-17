@@ -1,3 +1,3 @@
 default['java']['oracle']['accept_oracle_download_terms'] = true;
 default['java']['jdk_version'] = "7";
-default['td_agent']['plugins'] = [ "elasticsearch" ];
+default['td_agent']['plugins'] = [ "elasticsearch", "in_forward" ];
