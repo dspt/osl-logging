@@ -16,6 +16,8 @@ include_recipe "nginx"
 include_recipe "kibana"
 include_recipe "kibana::install"
 
+package 'curl'
+
 template '/etc/td-agent/td-agent.conf' do
   source "td-agent.conf.erb"
   owner 'root'
