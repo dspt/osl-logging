@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
+package 'curl'
+package 'libcurl-devel'
+
 include_recipe "yum"
 include_recipe "ntp"
 include_recipe "td-agent"
@@ -15,9 +18,6 @@ include_recipe "elasticsearch"
 include_recipe "nginx"
 include_recipe "kibana"
 include_recipe "kibana::install"
-
-package 'curl'
-package 'libcurl-devel'
 
 template '/etc/td-agent/td-agent.conf' do
   source "td-agent.conf.erb"
