@@ -1,10 +1,12 @@
 # osl-logging-cookbook
 
-TODO: Enter the cookbook description here.
+fluentd, ElasticSearch, kibana logging and viewing stack
+
+Right now it's just for the server to run the whole stack. Eventually this will fil out roles and all things necessary to log, collect, and visualize.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+Only testing against CentOS 6.5 now
 
 ## Attributes
 
@@ -16,10 +18,10 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['osl-logging']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['osl-logging']['server']</tt></td>
+    <td>String</td>
+    <td>Where to ship</td>
+    <td><tt>loghost-vip.osuosl.org</tt></td>
   </tr>
 </table>
 
@@ -48,4 +50,4 @@ Include `osl-logging` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Daniel Takamori ( pono@osuosl.org )
